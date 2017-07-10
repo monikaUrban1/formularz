@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Formularz</title>
+</head>
+<body>
+	<form method="post" action="something.php" name="newForm" onsubmit="return validateForm()">
+
+		<h1>Zarejestruj się</h1>
+		<div>
+		<label>Imię</label>
+		<input type="text" name="firstName" id="firstName" onmouseover="writeFirstName()" placeholder="">
+		<p id=checkFirstName></p>
+		</div>
+		<div>
+			<label>Nazwisko</label>
+		<input type="text" name="lastName" id="lastName" onmouseover="writeLastName()" placeholder="">
+		<p id=checkLastName></p>
+		</div>
+		<div>
+		<label>Hasło</label>
+		<input type="text" name="password" id="password" >
+		<label>Powtórz hasło</label>
+		<input type="text" name="repeatPassword" id="repeatPassword">
+		</div>
+		<input type="submit" name="Submit">
+	</form>
+
+
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
